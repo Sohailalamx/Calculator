@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --panel-color: #fff;
+    --bg-color: rgb(255, 224, 212);
+    --font-color: black;
+}
+
+.dark{
+    
+    --panel-color: black;
+    --bg-color: rgb(39, 18, 10);
+    --font-color: #fff;
+}
+
+
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    transition: ease 1s;
+}
+
+#topBar{
+    height: 50px;
+    width: 100%;
+    background-color: var(--panel-color);
+    border-radius: 0 0  10px 10px;
+    transition: ease 1s;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+}
+
+#toggleBtn{
+    margin-top: 20px;
+    margin-right: 40px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    transition: ease-in-out 2s;
+}
+
+.dark #toggleBtn {
+    rotate: 180deg;
+    margin-top: 50px;
+}
+
+#screen{
+    height: 40%;
+    width: 100%;
+}
+
+#switches{
+    height: 60%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#dot{
+    color: var(--font-color);
+    transition: ease 1s;
+}
+#butt{
+    padding: 20px 10px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: var(--panel-color);
+    transition: ease 1s;
+}
+
+i{
+    color: var(--font-color);
+    transition: ease 1s;
+}
+
+i span{
+    font-size: 0;
+}
+
+button{
+    padding: 20px 0px;
+    border: none;
+    background-color: var(--panel-color);
+    font-size: 2rem;
+    transition: ease 1s;
+}
+
+button:hover{
+    background: var(--bg-color);
+    border-radius: 20px;
+    transition: ease 1s;
+}
+
+
+
+/* ______________ */
+
+#prevdisplay {
+    padding: 20px;
+    font-size: 2em;
+    font-weight: 400;
+    color: var(--font-color);
+    transition: ease 1s;
+}
+
+#display{
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 60%;
+    font-size: 2em;
+    font-weight: 400;
+    color: var(--font-color);
+    transition-delay: ease 1s;
+    /* background-color: green; */
+}
